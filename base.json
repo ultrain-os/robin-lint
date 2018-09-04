@@ -113,9 +113,6 @@
     "no-unsafe-any": {
       "severity": "error"
     },
-    "no-unused-variable": {
-      "severity": "warning"
-    },
     "no-void-expression": {
       "severity": "error"
     },
