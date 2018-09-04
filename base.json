@@ -4,19 +4,39 @@
     "ban-types": {
       "severity": "error",
       "options": [
-        ["object", "Not supported."],
-        ["any", "Not supported."],
-        ["undefined", "Not supported."],
-        ["never", "Not supported."],
-        ["number", "Use one of the WebAssembly types instead."],
-        ["boolean", "Use `bool` instead."]
+        [
+          "object",
+          "Not supported."
+        ],
+        [
+          "any",
+          "Not supported."
+        ],
+        [
+          "undefined",
+          "Not supported."
+        ],
+        [
+          "never",
+          "Not supported."
+        ],
+        [
+          "number",
+          "Use one of the WebAssembly types instead."
+        ],
+        [
+          "boolean",
+          "Use `bool` instead."
+        ]
       ]
     },
     "restrict-plus-operands": {
       "severity": "error"
     },
     "curly": {
-      "options": ["ignore-same-line"]
+      "options": [
+        "ignore-same-line"
+      ]
     },
     "deprecation": {},
     "encoding": {
@@ -94,9 +114,7 @@
       "severity": "error"
     },
     "no-unused-variable": {
-      "options": [{
-        "ignore-pattern": "^_"
-      }]
+      "severity": "warning"
     },
     "no-void-expression": {
       "severity": "error"
@@ -104,7 +122,9 @@
     "prefer-method-signature": {},
     "radix": {},
     "semicolon": {
-      "options": ["always"]
+      "options": [
+        "always"
+      ]
     }
   }
 }
