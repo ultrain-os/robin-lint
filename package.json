@@ -1,0 +1,12 @@
+{
+  "name": "robin-lint",
+  "version": "0.0.1",
+  "description": "The robin linter for ultrian",
+  "main": "contract/index.d.ts",
+  "typings": "index.d.ts",
+  "repository": "https://github.com/ultrain-os/robin-lint.git",
+  "license": "MIT",
+  "keywords": [
+    "ultrain robin lint"
+  ]
+}
