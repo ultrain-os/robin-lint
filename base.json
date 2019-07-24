@@ -110,9 +110,6 @@
     "no-unbound-method": {
       "severity": "error"
     },
-    "no-unsafe-any": {
-      "severity": "error"
-    },
     "no-void-expression": {
       "severity": "error"
     },
@@ -122,6 +119,13 @@
       "options": [
         "always"
       ]
-    }
+    },
+    "max-line-length": [
+      true,
+      {
+        "limit": 240,
+        "ignore-pattern": "^import |^export {(.*?)}"
+      }
+    ]
   }
 }

@@ -15,20 +15,20 @@ class VariablesWalker extends Lint.RuleWalker {
         if (tsutils_1.isVariableStatement(node.parent)) {
             if (tsutils_1.isBlock(node.parent.parent)) {
                 if (tsutils_1.isFunctionScopeBoundary(node.parent.parent.parent) ||
-                    tsutils_1.isNamespaceDeclaration(node.parent.parent.parent)) {
-                    if (tsutils_1.getVariableDeclarationKind(node) == 1 /* Let */) {
+                  tsutils_1.isNamespaceDeclaration(node.parent.parent.parent)) {
+                    /*if (tsutils_1.getVariableDeclarationKind(node) == 1 /!* Let *!/) {
                         this.addFailureAtNode(node, Rule.TOP_LEVEL_VAR);
-                    }
+                    }*/
                 }
                 else if (tsutils_1.getVariableDeclarationKind(node) == 0 /* Var */) {
                     this.addFailureAtNode(node, Rule.BLOCK_LEVEL_LET);
                 }
             }
             else if (tsutils_1.isSourceFile(node.parent.parent) ||
-                tsutils_1.isModuleBlock(node.parent.parent)) {
-                if (tsutils_1.getVariableDeclarationKind(node) == 1 /* Let */) {
+              tsutils_1.isModuleBlock(node.parent.parent)) {
+                /*if (tsutils_1.getVariableDeclarationKind(node) == 1 /!* Let *!/) {
                     this.addFailureAtNode(node, Rule.TOP_LEVEL_VAR);
-                }
+                }*/
             }
             else if (tsutils_1.getVariableDeclarationKind(node) == 0 /* Var */) {
                 this.addFailureAtNode(node, Rule.BLOCK_LEVEL_LET);
